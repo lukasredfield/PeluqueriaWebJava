@@ -17,9 +17,9 @@ public class ViewsController {
         return new RedirectView("about.html");
     }
 
-    @GetMapping("/thanks-you")
+    @GetMapping("/thanks_you")
     public RedirectView RedirectThanks() {
-        return new RedirectView("thanks-you.html");
+        return new RedirectView("thanks_you.html");
     }
 
     @GetMapping("/services")
