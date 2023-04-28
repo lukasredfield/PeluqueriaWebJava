@@ -13,7 +13,7 @@ public class ToDoController {
     @Autowired
     private ToDoRespository todoRepository;
 
-/**/
+
 
     @GetMapping(value = "/tareas")
     public List <Clientes> getTareas(){
