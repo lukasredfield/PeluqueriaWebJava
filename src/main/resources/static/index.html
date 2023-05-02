@@ -167,12 +167,8 @@
                       <div class="icon"><span class="ion-ios-arrow-down"></span></div>
                       <select name="services" id="services" required="true" class="form-control">
                         <option value="">Selecciona Nuestros Servicios</option>
-                        <?php $query=mysqli_query($con,"select * from tblservices");
-              while($row=mysqli_fetch_array($query))
-              {
-              ?>
                         <option value="<?php echo $row['ServiceName'];?>"><?php echo $row['ServiceName'];?></option>
-                        <?php } ?>
+
                       </select>
                     </div>
                   </div>
@@ -207,9 +203,38 @@
     </div>
   </div>
 </section>
-
-
 <br>
+
+
+<footer>
+  <div class="container-fluid bg-light"" style="padding-top: 40px;">
+  <div class="row">
+    <div class="col-md-6 bg-light">
+      <h2>Contáctanos</h2>
+      <ul class="list-unstyled" style="padding-bottom: 50px;">
+        <li><i class="fa fa-map-marker-alt"></i> Buenos Aires, Argentina</li>
+        <li><i class="fa fa-phone"></i> +1 123 456789</li>
+        <li><i class="fa fa-envelope"></i> peluqueriaweb@gmail.com</li>
+      </ul>
+    </div>
+    <div class="col-md-6 bg-light">
+      <h2>Síguenos</h2>
+      <ul class="social-network social-circle list-inline" style="padding-bottom: 20px;">
+        <li class="list-inline-item"><a href="https://www.instagram.com/iglesiajec/" class="icoInstagram" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.facebook.com/comunidadwebjec" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="list-inline-item"><a href="https://www.youtube.com/@ComunidadJec" class="icoYoutube" title="Youtube"><i class="fab fa-youtube"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid" class="padding-top: 50px;">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-center">&copy; Comunidad Web Jec 2022-2023. DIOS TE BENDIGA!</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 <!-- loader -->
